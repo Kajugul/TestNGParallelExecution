@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Google URL verification" parallel="tests" thread-count="2" verbose="1" preserve-order="true">
+
+    <test name="Google Test 01">
+        <classes>
+            <class name="Test01"/>
+        </classes>
+    </test>
+
+    <test name="Google Test 02">
+        <classes>
+            <class name="Test01"/>
+        </classes>
+    </test>
+
+
+
+</suite>
