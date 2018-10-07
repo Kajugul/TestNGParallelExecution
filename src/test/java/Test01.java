@@ -7,7 +7,7 @@ import java.util.concurrent.TimeUnit;
 
 public class Test01
 {
-    public WebDriver driver = null;
+    public WebDriver driver;
     public String currentURL = "https://www.google.com";
 
     @BeforeMethod()
