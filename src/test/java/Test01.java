@@ -7,7 +7,7 @@ import java.util.concurrent.TimeUnit;
 
 public class Test01
 {
-    public WebDriver driver;
+    public WebDriver driver = null;
     public String currentURL = "https://www.google.com";
 
     @BeforeMethod()
@@ -27,7 +27,7 @@ public class Test01
         driver.get(currentURL);
     }
 
-    @AfterMethod
+    @AfterMethod(alwaysRun = true)
     public void postConditions() throws InterruptedException
     {
         Thread.sleep(3000);
